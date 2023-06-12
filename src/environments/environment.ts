@@ -3,7 +3,12 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  weatherApiUrl: 'https://air-quality-api.p.rapidapi.com/air-quality?city=amsterdam&country=netherlands&lat=52.377956&lon=4.897070',
+  XRapidAPIKeyHeader: 'X-RapidAPI-Key',
+  XRapidAPIHostHeader: 'X-RapidAPI-Host',
+  XRapidAPIKey: 'a60ca7c267msh373091a6c48cd65p1671f0jsn6aed35526059',
+  XRapidAPIHost: 'air-quality-api.p.rapidapi.com'
 };
 
 /*
