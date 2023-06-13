@@ -1,14 +1,15 @@
-<div class="container">
+<app-search (searchedValue)="searchValEntered($event)"></app-search>
+<div class="container p-0">
   <div class="upper-data">
-    <img src="../assets/day.jpg" alt="Day background" *ngIf="14 > 15">
+    <img src="../assets/day.jpg" alt="Day background" *ngIf="weatherData.temp  > 15">
     <img src="../assets/night.jpg" alt="Night background" *ngIf="14 <= 15">
 
     <div class="weather-data">
       <div class="location">
-        johannesburg
+        {{city}}
       </div>
       <div class="temperature">
-        {{14.40 | number: '1.0-0'    }} °C
+        {{weatherData.temp | number: '1.0-0' }} °C
       </div>
     </div>
   </div>
@@ -23,7 +24,7 @@
           <span>min</span>
         </div>
         <div class="info-block-value">
-          10°C
+          {{weatherData.min_temp | number: '1.0-0' }} °C
         </div>
       </div>
       <div class="info-block">
@@ -32,7 +33,7 @@
           <span>max</span>
         </div>
         <div class="info-block-value">
-          20°C
+          {{weatherData.max_temp | number: '1.0-0' }} °C
         </div>
       </div>
       <div class="info-block">
@@ -41,7 +42,7 @@
           <span>humidity</span>
         </div>
         <div class="info-block-value">
-          77%
+          {{weatherData.humidity}}%
         </div>
       </div>
       <div class="info-block">
@@ -50,7 +51,7 @@
           <span>wind</span>
         </div>
         <div class="info-block-value">
-          11km/hr
+          {{weatherData.wind_speed}} km/h
         </div>
       </div>
     </div>

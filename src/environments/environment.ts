@@ -4,11 +4,11 @@
 
 export const environment = {
   production: false,
-  weatherApiUrl: 'https://air-quality-api.p.rapidapi.com/air-quality?city=amsterdam&country=netherlands&lat=52.377956&lon=4.897070',
+  weatherApiUrl: 'https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city=krugersdorp',
   XRapidAPIKeyHeader: 'X-RapidAPI-Key',
   XRapidAPIHostHeader: 'X-RapidAPI-Host',
   XRapidAPIKey: 'a60ca7c267msh373091a6c48cd65p1671f0jsn6aed35526059',
-  XRapidAPIHost: 'air-quality-api.p.rapidapi.com'
+  XRapidAPIHost: 'weather-by-api-ninjas.p.rapidapi.com'
 };
 
 /*
