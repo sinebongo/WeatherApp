@@ -12,9 +12,11 @@
 .search input{
   background-color: #7077d7;
   border: 0;
+  color: white;
 }
 
 .search button{
   background-color: #7077d7;
+  color : white
 }
 
