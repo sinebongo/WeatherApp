@@ -2,7 +2,7 @@
 <div class="container p-0">
   <div class="upper-data">
     <img src="../assets/day.jpg" alt="Day background" *ngIf="weatherData.temp  > 15">
-    <img src="../assets/night.jpg" alt="Night background" *ngIf="14 <= 15">
+    <img src="../assets/night.jpg" alt="Night background" *ngIf="weatherData.temp  <= 15">
 
     <div class="weather-data">
       <div class="location">
