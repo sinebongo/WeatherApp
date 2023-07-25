@@ -1,6 +1,7 @@
 # WeatherApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.6.
+It was developed to check weather from anywhere around the world using city names
 
 ## Development server
 
