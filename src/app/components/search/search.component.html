@@ -1,6 +1,9 @@
 <div class="search row " >
-  <div class="col-8">
-    <input type="text" class="form-control" [(ngModel)]="searchVal">
+  <div class="col-auto">
+    <label class="text-light fw-bold" for="city">City</label>
+  </div>
+  <div class="col-auto">
+    <input type="text" id="city" class="form-control text-bg-light" [(ngModel)]="searchVal" placeholder="Please enter a city">
   </div>
   <div class="col-auto">
     <button class="btn" (click)="searchMethod()" type="button">search</button>
